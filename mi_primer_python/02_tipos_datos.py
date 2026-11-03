@@ -33,11 +33,65 @@ Crea variables numéricas para tu edad, cantidad de hermanos y año actual. Mues
 tipo de una con type().
 """
 
-miEdad = input("Ingrese su edad: ")
-hermanos = input("Ingrese su cantidad de hermanos: ")
-fechaActual = input("Ingrese la fecha actual: ")
+miEdad = int(input("Ingrese su edad: "))
+hermanos = int(input("Ingrese su cantidad de hermanos: "))
+fechaActual = int(input("Ingrese la fecha actual: "))
 tipoVar2 = type(miEdad)
 print(f"""Mi edad: {miEdad}
 Hermanos: {hermanos}
 Fecha: {fechaActual}
 Tipo de variable: {tipoVar2}""")
+
+#Decimales ('float')
+precio = 1599.90
+altura = 1.65
+print(precio)
+print(altura)
+print(type(altura))
+
+"""
+Declara variables para el precio de un producto, la temperatura y un promedio de notas. Imprime los tres valores y
+utiliza type() en dos de ellos.
+"""
+
+precio = float(input("Inserte un precio: "))
+temp = float(input("Inserte la temperatura: "))
+promedio = float(input("Inserte un promedio: "))
+print(f"""El precio del producto es: {precio}
+La temperatura es: {temp}
+El promedio de notas es: {promedio}""")
+print(type(precio), type(temp), type(promedio))
+
+#Booleanos ('bool')
+tiene_computador = True
+esta_lloviendo = False
+print(tiene_computador)
+print(esta_lloviendo)
+print(type(tiene_computador))
+
+"""
+Crea tres variables booleanas para indicar si tienes Internet, si terminaste la tarea y si tienes clases mañana.
+Imprime sus valores y verifica el tipo de una.
+"""
+
+tengoInternet = True
+terminéLaTarea = False
+tengoClaseMañana = True
+print(f"""Tengo internet? {tengoInternet}
+Terminé mi tarea? {terminéLaTarea}
+Tengo clase mañana? {tengoClaseMañana}""")
+print(f"Los tipos de variables son: {type(tengoInternet)}, {type(terminéLaTarea)}, {type(tengoClaseMañana)}")
+
+"""
+En el mismo archivo, agrega una ficha de producto que contenga nombre (str), cantidad (int), precio (float) y
+disponibilidad (bool). Debes imprimir cada valor y comprobar su tipo.
+"""
+
+nombreProducto = 'Pan'
+cantidadProducto = 12
+valorProducto = 2000.5
+estáDisponible = True
+print(f"""Nombre del producto: {nombreProducto}, Tipo de variable: {type(nombreProducto)}
+Cantidad del producto: {cantidadProducto}, Tipo de variable: {type(cantidadProducto)}
+Valor del producto: {valorProducto}, Tipo de variable: {type(valorProducto)}
+Está disponible? {estáDisponible}, Tipo de variable: {type(estáDisponible)}""")
